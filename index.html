@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Art</title>
+  <style>
+
+    html{
+      background-color: aqua;
+      height: 200%;
+    }
+    .container{
+      display: grid;
+      gap: 10px;
+      width: 500px;
+      height: 300px;
+      grid-template-columns: 1.5fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      margin: auto;
+    }
+    .containertwo{
+      display: grid;
+      gap: 10px;
+      width: 500px;
+      height: 300px;
+      grid-template-columns: 1fr 1.5fr ;
+      grid-template-rows: 1fr 1fr;
+      margin: auto;
+      margin-top: 15px;
+    }
+    .border{
+      border: solid 1px black;
+      margin-top: 20px;
+    }
+
+    .image-big{
+      grid-row: span 2;
+      /* height: 100%;
+      width: 100%; */
+      /* height: 400px; */
+      /* width: 400px; */
+    }
+
+    .image-small{
+      height: 100%;
+      width: 100%;
+    }
+
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .height{
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container border">
+    <div class="border image-big"><img src="1.JPG" alt=""></div>
+    <div class="border image-small"><img src="2.JPG" alt=""></div>
+    <div class="border image-small"><img src="3.JPG" alt=""></div>
+  </div>
+  <div class="height"></div>
+  <div class="container border">
+    <div class="border image-small"><img src="1.JPG" alt=""></div>
+    <div class="border image-small"><img src="2.JPG" alt=""></div>
+    <div class="border image-big"><img src="3.JPG" alt=""></div>
+  </div>
+  <!-- <div class="containertwo border">
+    <div class="border two"><img src="3.JPG" alt=""></div>
+    <div class="border two"><img src="2.JPG" alt=""></div>
+    <div class="border one"><img src="1.JPG" alt=""></div>
+  </div> -->
+</body>
+
+</html>
